@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Received</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+        }
+
+        .content {
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 20px 0;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">Ticket Received</div>
+        <div class="content">
+            <p>Dear <%= name %>,</p>
+            <p>Thank you for reaching out to us! We have received your ticket and a member of our support team will get
+                back to you as soon as possible.</p>
+            <p>Here are the details of your ticket:</p>
+            <ul>
+                <li><strong>Message:</strong>
+                    <%= ticket.message %>
+                </li>
+            </ul>
+            <p>If you have any additional information or questions, feel free to reply to this email.</p>
+            <p>Best regards,<br>Your Support Team</p>
+        </div>
+        <div class="footer">
+            <p>&copy; <%= new Date().getFullYear() %> Your Company Name. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>

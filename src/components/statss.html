@@ -1,0 +1,47 @@
+<div
+    className="absolute top-10 left-4 p-4 border border-base-content/30 rounded-lg backdrop-blur-md flex items-center justify-center flex-col bg-base-content/10">
+    <div className="flex items-center justify-center w-10 h-10 bg-base-content rounded-full shadow-md text-base-300">
+        <Briefcase size={24} />
+    </div>
+    <h1 className="text-2xl font-bold">
+        {
+        <CountUp end={stats[0].value} />} +
+    </h1>
+    <p className="text-base text-base-content/90">{stats[0].label}</p>
+</div>
+
+<div
+    className="absolute top-10 right-4 p-4 border border-base-content/30 rounded-lg backdrop-blur-md flex items-center justify-center flex-col bg-base-content/10">
+    <div className="flex items-center justify-center w-10 h-10 bg-base-content rounded-full shadow-md text-base-300">
+        <Smile size={24} />
+    </div>
+    <h1 className="text-2xl font-bold">
+        {
+        <CountUp end={stats[1].value} />} %
+    </h1>
+    <p className="text-base text-base-content/90">{stats[1].label}</p>
+</div>
+
+<div
+    className="absolute bottom-4 left-4 p-4 border border-base-content/30 rounded-lg backdrop-blur-md flex items-center justify-center flex-col bg-base-content/10">
+    <div className="flex items-center justify-center w-10 h-10 bg-base-content rounded-full shadow-md text-base-300">
+        <Code size={24} />
+    </div>
+    <h1 className="text-2xl font-bold">
+        {
+        <CountUp end={stats[2].value} />} +
+    </h1>
+    <p className="text-base text-base-content/90">{stats[2].label}</p>
+</div>
+
+<div
+    className="absolute bottom-4 right-4 p-4 border border-base-content/30 rounded-lg backdrop-blur-md flex items-center justify-center flex-col bg-base-content/10">
+    <div className="flex items-center justify-center w-10 h-10 bg-base-content rounded-full shadow-md text-base-300">
+        <Calendar size={24} />
+    </div>
+    <h1 className="text-2xl font-bold">
+        {
+        <CountUp end={stats[3].value} />} +
+    </h1>
+    <p className="text-base text-base-content/90">{stats[3].label}</p>
+</div>

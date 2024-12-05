@@ -1,0 +1,195 @@
+{
+  "contactInformation": {
+    "name": "Saurav Patil",
+    "titles": [
+      {
+        "title": "Software Developer"
+      },
+      {
+        "title": "Frontend Developer"
+      },
+      {
+        "title": "Backend Developer"
+      },
+      {
+        "title": "Full Stack Web Developer (MERN)"
+      },
+      {
+        "title": "Next JS Developer"
+      },
+      {
+        "title": "Java Full Stack Developer"
+      },
+      {
+        "title": "Spring Framework Developer"
+      },
+      {
+        "title": "Python Django Developer"
+      }
+    ],
+    "address": "Gat No. 1513/1, Plot No. 3b, LIC Colony, Pimple Road, Amalner, Jalgaon 425401",
+    "phone": "+91 74994 55643",
+    "email": "sauravpatil.rcpit@gmail.com",
+    "links": {
+      "LinkedIn": "https://www.linkedin.com/in/saurav-patil-199505247/",
+      "GitHub": "https://github.com/scammerpatil",
+      "Personal-Portfolio": "https://scammerpatil.github.io/personal-portfolio/",
+      "CodeChef": "https://www.codechef.com/users/sesrc_22",
+      "LeetCode": "https://leetcode.com/u/scammerpatil/"
+    }
+  },
+  "internshipExperience": [
+    {
+      "company": "R3 Systems India Pvt Ltd",
+      "location": "Shirpur, Maharashtra",
+      "role": "Java Developer",
+      "duration": "06/2023 - 07/2023",
+      "details": [
+        "Developed Java applications with HTML5, CSS3, JavaScript, and MySQL, enhancing data retrieval speed by 30%.",
+        "Successfully delivered 7 smaller projects and 2 major initiatives."
+      ]
+    },
+    {
+      "company": "R3 Systems India Pvt Ltd",
+      "location": "Shirpur, Maharashtra",
+      "role": "Spring Framework Developer",
+      "duration": "01/2024 - 02/2024",
+      "details": [
+        "Created 2 robust applications with Spring Framework that handled 100+ requests during testing.",
+        "Applied MVC, IoC, and Dependency Injection, improving efficiency by 20%."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "SES’s R.C. Patel Institute of Technology",
+      "location": "Shirpur, Maharashtra",
+      "degree": "B. Tech in Computer Engineering",
+      "CGPA": "7.45/10 (up to Sem V)",
+      "duration": "Jun 2022 - Present"
+    },
+    {
+      "institution": "Pratap College",
+      "location": "Amalner, Maharashtra",
+      "degree": "12th (HSC) in Electronics and Telecommunication",
+      "percentage": "88.50%",
+      "duration": "2020 - 2022"
+    },
+    {
+      "institution": "Shri N.T. Mundada Global View School",
+      "location": "Amalner, Maharashtra",
+      "degree": "10th (SSC) in General Studies",
+      "CGPA": "82.20%",
+      "duration": "2019"
+    }
+  ],
+  "certificationsAndTraining": [
+    {
+      "certifications": [
+        "C & C++ - Nextech Infosystem",
+        "Basic of Java - Nextech Infosystem",
+        "React JS Complete Guide - Udemy",
+        "Full Stack Web-Dev - Udemy",
+        "Nodevember - Node JS"
+      ],
+      "training": [
+        "Java Web-Dev (JSP/Spring) - R3System",
+        "Basic of Java - Zensar Tech",
+        "Basic of SQL - Zensar Tech",
+        "TalentNext - 2024 - Wipro",
+        "Python for Beginner - College ESDP"
+      ]
+    }
+  ],
+  "skills": {
+    "programmingLanguagesAndDatabases": [
+      "Python",
+      "Java",
+      "C",
+      "C++",
+      "SQL",
+      "MySQL",
+      "MongoDB",
+      "Oracle SQL"
+    ],
+    "webDevelopmentAndFrameworks": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Node JS",
+      "React JS",
+      "Express JS",
+      "Spring Boot",
+      "Bootstrap",
+      "JSP",
+      "Servlets",
+      "MongoDB"
+    ],
+    "toolsAndTechnologies": [
+      "Git",
+      "GitHub",
+      "PIP",
+      "NPM",
+      "Docker",
+      "RESTful APIs",
+      "Postman",
+      "Eclipse",
+      "VS Code"
+    ],
+    "softSkills": [
+      "Leadership",
+      "Public Speaking",
+      "Teamwork",
+      "Adaptability",
+      "Problem-solving"
+    ]
+  },
+  "achievements": [
+    "Certified in Java Programming and Python for Data Science, completed training in Web Development.",
+    "Core team member of the Akatsuki Coding Club, founding member of NovaCops Tech Support Network.",
+    "Conducted events including teaching Node JS and organizing the Smart India Hackathon.",
+    "Cleared the Dr. Homi Bhabha Junior Scientist exam, won a scholarship, and awarded Best Presenter at Engineering Day."
+  ],
+  "techstack": {
+    "General": {
+      "projects": []
+    },
+    "Frontend Developer": {
+      "projects": [
+        {
+          "name": "Personal Portfolio",
+          "description": "Developed a responsive portfolio website using React JS, showcasing personal projects and skills.",
+          "technologies": ["React JS", "Bootstrap", "JSX"]
+        },
+        {
+          "name": "Spotify",
+          "description": "Created a music player web application mimicking Spotify, using JavaScript, HTML5, and CSS3.",
+          "technologies": ["JavaScript", "HTML5", "CSS3"]
+        },
+        {
+          "name": "Weather App",
+          "description": "Designed a weather application using React JS, fetching and displaying real-time weather data.",
+          "technologies": ["React JS", "Fetch API", "Weather API"]
+        }
+      ]
+    },
+    "Backend Developer": {
+      "projects": []
+    },
+    "Full Stack Web Developer (MERN)": {
+      "projects": []
+    },
+    "Next JS Developer": {
+      "projects": []
+    },
+    "Java Full Stack Developer": {
+      "projects": []
+    },
+    "Spring Framework Developer": {
+      "projects": []
+    },
+    "Python Django Developer": {
+      "projects": []
+    }
+  }
+}
