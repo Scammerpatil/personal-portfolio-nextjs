@@ -7,7 +7,6 @@ import {
 } from "lucide-react";
 import { motion } from "framer-motion";
 import { TypewriterEffectSmooth } from "../TypeWriter";
-import { useEffect, useState } from "react";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -15,58 +14,6 @@ const fadeIn = {
 };
 
 const HeroSection = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const words = [
-    {
-      text: "The Scammer 🤖",
-      className: "text-error font-bold",
-    },
-    {
-      text: "A Decent Developer 💻",
-      className: "text-primary font-semibold",
-    },
-    {
-      text: "A Tech Enthusiast 🚀",
-      className: "text-secondary font-medium",
-    },
-    {
-      text: "An Open Source Lover 🌐",
-      className: "text-accent font-semibold",
-    },
-    {
-      text: "Problem Solver 🧠",
-      className: "text-info font-medium",
-    },
-    {
-      text: "Code Whisperer 📝",
-      className: "text-success font-bold",
-    },
-    {
-      text: "Creative Thinker 🎨",
-      className: "text-warning font-semibold",
-    },
-    {
-      text: "Team Player 🤝",
-      className: "text-neutral font-medium",
-    },
-    {
-      text: "Tech Explorer 🧭",
-      className: "text-base-content font-semibold",
-    },
-    {
-      text: "Coffee Fueled Coder ☕",
-      className: "text-blue-500 dark:text-blue-500 font-bold",
-    },
-  ];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % words.length);
-    }, 5000);
-
-    return () => clearInterval(interval);
-  }, [words.length]);
-
   return (
     <section id="#home">
       <div className="relative overflow-hidden bg-base-200 min-h-screen flex items-center justify-center">
@@ -325,9 +272,9 @@ const HeroSection = () => {
               initial="hidden"
               animate="visible"
               variants={fadeIn}
-              className="w-full text-center mb-16"
+              className="w-full text-center mb-12"
             >
-              <h1 className="text-5xl font-bold mb-16">
+              <h1 className="text-5xl font-bold mb-12">
                 Hi, I'm{" "}
                 <span className="text-accent bg-accent-content px-3 rounded-xl">
                   Saurav Patil

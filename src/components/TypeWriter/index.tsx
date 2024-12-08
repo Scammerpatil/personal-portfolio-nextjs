@@ -2,42 +2,61 @@
 
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 export const TypewriterEffectSmooth = () => {
   const words = [
     { text: "The Scammer 🤖", className: "text-error font-bold" },
+    { text: "Team Player 🤝", className: "text-base-content font-medium" },
     { text: "A Decent Developer 💻", className: "text-primary font-semibold" },
     { text: "A Tech Enthusiast 🚀", className: "text-secondary font-medium" },
     { text: "An Open Source Lover 🌐", className: "text-accent font-semibold" },
     { text: "Problem Solver 🧠", className: "text-info font-medium" },
     { text: "Code Whisperer 📝", className: "text-success font-bold" },
     { text: "Creative Thinker 🎨", className: "text-warning font-semibold" },
-    { text: "Team Player 🤝", className: "text-neutral font-medium" },
     { text: "Tech Explorer 🧭", className: "text-base-content font-semibold" },
     { text: "Coffee Fueled Coder ☕", className: "text-blue-500 font-bold" },
   ];
 
-  const renderWords = () => {
+  const [currentWordIndex, setCurrentWordIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentWordIndex((prev) => (prev + 1) % words.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const renderWords = ({
+    currentWord,
+  }: {
+    currentWord: { text: string; className: string };
+  }) => {
+    const characters = Array.from(currentWord.text).map((char, index) => {
+      const isSpace = char === " ";
+      return (
+        <motion.span
+          key={`char-${currentWordIndex}-${index}`}
+          className={cn(
+            "inline-block",
+            currentWord.className,
+            isSpace ? "px-1" : ""
+          )}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            duration: 0.05,
+            delay: index * 0.05,
+          }}
+        >
+          {isSpace ? "\u00A0" : char} {/* Preserve space using nbsp */}
+        </motion.span>
+      );
+    });
+
     return (
-      <div className="inline-block text-center">
-        {words.map((word, wordIndex) => (
-          <span key={`word-${wordIndex}`} className="inline-block mr-2">
-            {word.text.split("").map((char, charIndex) => (
-              <motion.span
-                key={`char-${wordIndex}-${charIndex}`}
-                className={cn("inline-block", word.className)}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{
-                  duration: 0.05,
-                  delay: wordIndex * 2 + charIndex * 0.05,
-                }}
-              >
-                {char}
-              </motion.span>
-            ))}
-          </span>
-        ))}
+      <div key={`word-container-${currentWordIndex}`} className="inline-block">
+        {characters}
       </div>
     );
   };
@@ -58,7 +77,7 @@ export const TypewriterEffectSmooth = () => {
           className="text-xs sm:text-base md:text-xl lg:text-3xl xl:text-5xl font-bold"
           style={{ whiteSpace: "nowrap" }}
         >
-          {renderWords()}
+          {renderWords({ currentWord: words[currentWordIndex] })}
         </div>
       </motion.div>
       <motion.span

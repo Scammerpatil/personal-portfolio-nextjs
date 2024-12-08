@@ -88,7 +88,7 @@ const Header = () => {
                 <li key={index}>
                   <Link
                     href={link.path}
-                    className="block px-3 py-2 text-lg font-medium text-base-content hover:text-primary focus:text-primary"
+                    className="block px-3 py-2 text-lg text-base-content hover:text-primary focus:text-primary"
                   >
                     {link.name}
                   </Link>
